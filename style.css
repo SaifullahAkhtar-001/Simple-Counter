@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+        animation: rainbow 18s ease infinite;}
+
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+}
+.title,
+#counter{
+    color: rgb(117, 66, 7);
+    font-weight: 900;
+    font-size: 35px;
+    text-decoration: dotted;
+    text-align: center;
+    padding: 0;
+}
+div #counter{
+    margin-top: 20px;
+}
+.box{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    z-index: 100;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-color: bisque;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+}
+.button-container{
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    flex: 1fr 1fr;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button-reset,
+.button{
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(172, 108, 34);
+    background-color: rgb(255, 210, 154);
+    padding: 14px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: border margin .5s;
+}
+.button:hover{
+    border: 2px solid rgb(175, 128, 70);
+    margin: 8px;
+}
+.button-reset:hover{
+    border: 2px solid rgb(175, 128, 70);
+    margin: 8px;
+}

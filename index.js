@@ -8,8 +8,10 @@ function increament(){
 
 function decreament(){
     console.log(count)
-    count = count-1
-    countEl.innerText = count
+    if (count > 0) {
+        count = count-1
+        countEl.innerText = count
+    }
 }
 
 function reset(){

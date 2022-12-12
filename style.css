@@ -59,6 +59,11 @@ body{
 .people{
     font-weight: 500;
 }
+#save{
+    color: rgb(117, 66, 7);
+    font-size: 25px;
+    font-weight: 300;
+}
 #counter{
     font-weight: 300;
 }

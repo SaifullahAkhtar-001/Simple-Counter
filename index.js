@@ -17,5 +17,12 @@ function decreament(){
 function reset(){
     console.log(count)
     count = 0
-    countEl.innerText = count
+    countEl.textContent = count
+    console.log(saveElreset)
+    // saveElreset.textContent = saveElreset
+}
+let saveElreset = document.getElementById("save")
+let saveEl= document.getElementById("save")
+function save(){
+    saveEl.textContent += count + " - " 
 }
